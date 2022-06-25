@@ -1,0 +1,9 @@
+---
+- name: push to dockerhub
+  hosts: all
+  become: true
+  tasks:
+  - name: psh the image
+    docker_image:
+      name: cubensquare/sam-image
+      push: yes

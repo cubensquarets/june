@@ -1,0 +1,9 @@
+---
+- name: service restart
+  hosts: all
+  become: true
+  tasks:
+  - name: Restart service apache2, in all cases
+    service:
+     name: apache2
+     state: restarted

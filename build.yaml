@@ -1,0 +1,7 @@
+---
+- name: build docker image
+  hosts: all
+  become: true
+  tasks:
+  - name: build image
+    command: docker build /home/ansible/ -t cubensquare/sam-image

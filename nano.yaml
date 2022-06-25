@@ -1,0 +1,9 @@
+---
+- name: install nano
+  hosts: all
+  become: true
+  tasks:
+  - name: install nano package
+    apt:
+     name: nano
+     state: present
