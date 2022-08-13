@@ -7,3 +7,7 @@
     service:
      name: apache2
      state: restarted
+  - name: copy a file
+    copy:
+     src: /home/ansible/
+     dest: /home/ansible
